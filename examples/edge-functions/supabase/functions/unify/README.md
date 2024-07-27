@@ -12,10 +12,10 @@ cp supabase/.env.local.example supabase/.env.local
 supabase functions serve --env-file ./supabase/.env.local --no-verify-jwt
 ```
 
-Use cURL or Postman to make a POST request to http://localhost:54321/functions/v0/unify.
+Use cURL or Postman to make a POST request to http://localhost:54321/functions/v1/unify.
 
 ```bash
-curl -i --location --request POST http://localhost:54321/functions/v0/unify \
+curl -i --location --request POST http://localhost:54321/functions/v1/unify \
   --header 'Content-Type: application/json' \
   --data '{"query":"What is Supabase?"}'
 ```
